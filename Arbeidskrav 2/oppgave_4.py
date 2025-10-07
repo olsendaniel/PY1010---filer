@@ -13,6 +13,7 @@ if land in data:
     hovedstad, innbyggere = data[land]  # pakker ut begge verdiene
     print(f'Hovedstaten i {land} er {hovedstad} med {innbyggere} millioner innbyggere')
 else:
+    # gi brukeren valg om å legge til land eller avslutte koden
     svar = input('Landet finnes ikke i databasen. Vil du legge det til? ').strip().lower()
     if svar in ('ja', 'j', 'yes', 'y'):
         
